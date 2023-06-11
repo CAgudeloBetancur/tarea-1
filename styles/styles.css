@@ -1,0 +1,21 @@
+small {
+  display: none;
+  font-weight: bold;
+  color: hsl(0 100% 60%);
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  border: 2px solid hsla(0 100% 60% / .6);
+}
+
+.error:focus {
+  outline: 3px solid hsla(0 100% 60% / .5);
+}

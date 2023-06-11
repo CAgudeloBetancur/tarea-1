@@ -11,6 +11,7 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
       crossorigin="anonymous"
   >
+  <link rel="stylesheet" href="./../styles/styles.css">
 </head>
 <body>
 
@@ -51,8 +52,8 @@
 
       <article class="col-12">
         <!-- Formulario -->
-        <form action="">
-          <div class="mb-3">
+        <form action="" id="form">
+          <div class="mb-3 form-group" id="fg-1">
             <label class="form-label" for="name">Nombre: </label>
             <input 
               class="form-control" 
@@ -62,8 +63,9 @@
               placeholder="Nombre..." 
               required
             >
+            <small></small>
           </div>
-          <div class="mb-3">
+          <div class="mb-3 form-group" id="fg-2">
             <label class="form-label" for="description">Descripcion: </label>
             <input 
               class="form-control" 
@@ -73,8 +75,9 @@
               placeholder="Descripcion..." 
               required
             >
+            <small></small>
           </div>
-          <div class="mb-3">
+          <div class="mb-3 form-group" id="fg-3">
             <label class="form-label" for="direction">Dirección: </label>
             <input 
               class="form-control" 
@@ -84,8 +87,9 @@
               placeholder="Direction..." 
               required
             >
+            <small></small>
           </div>
-          <div class="mb-3">
+          <div class="mb-3 form-group" id="fg-4">
             <label class="form-label" for="image">URL Imagen: </label>
             <input 
               class="form-control" 
@@ -95,9 +99,10 @@
               placeholder="URL Image..." 
               required
             >
+            <small></small>
           </div>
           <div class="mb-4">
-            <input class="btn btn-lg btn-success" type="submit" value="Guardar">
+            <input class="btn btn-lg btn-success" id="submit-btn" type="submit" value="Guardar">
           </div>
         </form>
       </article>
@@ -111,6 +116,8 @@
   crossorigin="anonymous"
   >
   </script>
+
+  <script src="./../js/validations.js"></script>
 
 </body>
 </html>
